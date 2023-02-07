@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Buổi 3: CSS</title> 
+<link rel="stylesheet" href="/Buoi 3/asset/style.css">
+</head>
+<body>
+   <!---- 
+    1. CSS
+    2. Cách styling cho HTML bằng CSS
+    3. Các thuộc tính phổ biến
+    4. Màu sắc
+    5. Đơn vị đo
+    6. Box-model
+    7. Box sizing 
+    - box-sizing: content-box -> giá trị mặc định. Lấy content làm căn cứ để tính vùng không gian box chiếm dụng
+
+    8. inline, inline-block, block
+        inline: không bắt đầu 1 dòng mới nếu còn không gian khả dụng
+        chỉ chiếm không gian cần thiết để hiển thị
+        không seting được width & height
+        padding & margin k được tôn trọng
+
+        Block:
+        Luôn bắt đầu 1 dòng mới
+        chiếm 100% không gian khả dụng
+
+        inline-block: 
+        - KHông bắt đầu 1 dòng mới
+        - Chỉ chiếm không gian cần thiết
+        - Cài đặt được padding, margin, width, height
+
+    9. HTML nội tuyến
+    10. Chrome developer tool
+    11. CSS Selector cơ bản
+
+    -->
+    <h1 id="div-1">Heading 1</h1>
+    <hr/>
+
+    <h2>Heading 2</h2>
+    <br/>
+    <h3>Heading 3</h3>
+    <div ="div-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ratione ipsum asperiores delectus natus. Eius fugit iste soluta officia nemo beatae fugiat vitae tenetur, quo explicabo enim ipsa voluptatibus. Suscipit!</div>
+    <br/>
+    <div class="div-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ratione ipsum asperiores delectus natus. Eius fugit iste soluta officia nemo beatae fugiat vitae tenetur, quo explicabo enim ipsa voluptatibus. Suscipit!</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+    <script>
+    VANTA.CLOUDS({
+      el: "#div-1",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00
+    })
+    </script>
+</body>

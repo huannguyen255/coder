@@ -1,0 +1,160 @@
+<!-- @format -->
+
+<div class="bhrsection-padding Roi__wrapper">
+  <div class="bhrmargin-auto Roi__container">
+    <div class="RoiLeft">
+      <h1
+        class="typ-section-header bhrtyp-italic bhrcolor-gray12 RoiLeft__heading"
+      >
+        HR Software ROI Calculator
+      </h1>
+      <p class="RoiLeft__paragraph">
+        Is an HRIS worth the cost? Your HR team is spending time on
+        administrative tasks that they could use for initiatives that will
+        directly impact your bottom line. This HR software savings calculator
+        helps you see how much your organization could save each year with HR
+        software.
+      </p>
+      <div class="RoiLeft__formWrapper">
+        <form
+          class="bhrForm js-bhrForm js-roi-calculator"
+          action=""
+          method="post"
+          id="roi-calc-submit"
+        >
+          <div class="bhrForm__inputWrapper RoiLeft__inputWrapper">
+            <input
+              class="RoiLeft__input bhrForm__input js-bhrForm-input js-bhrForm-required js-total-employees"
+              id="totalEmployees"
+              required=""
+              type="number"
+              aria-label="Total Employees"
+            />
+            <label
+              class="bhrForm__label RoiLeft__placeholder js-bhrForm-label"
+              for="totalEmployees"
+              >Total Employees</label
+            >
+          </div>
+          <div class="bhrForm__inputWrapper RoiLeft__inputWrapper">
+            <input
+              class="RoiLeft__input bhrForm__input js-bhrForm-input js-bhrForm-required js-new-employees"
+              id="newEmployees"
+              required=""
+              type="number"
+              aria-label="New Employees Per Year"
+            />
+            <label
+              class="bhrForm__label RoiLeft__placeholder js-bhrForm-label"
+              for="newEmployees"
+              >New Employees Per Year</label
+            >
+          </div>
+          <div class="bhrForm__inputWrapper RoiLeft__inputWrapper">
+            <div class="RoiLeft__dollarSign js-roi-dollar-sign">$</div>
+            <input
+              class="RoiLeft__input RoiLeft__input--padding bhrForm__input js-bhrForm-input js-bhrForm-required js-generalist-sal js-blur-dollar-sign"
+              id="hrGeneralistSalary"
+              required=""
+              type="number"
+              aria-label="HR Generalist Salary and Benefits"
+            />
+            <label
+              class="bhrForm__label RoiLeft__placeholder js-bhrForm-label"
+              for="hrGeneralistSalary"
+              >HR Generalist Salary and Benefits</label
+            >
+          </div>
+          <div class="bhrForm__inputWrapper RoiLeft__inputWrapper">
+            <div class="RoiLeft__dollarSign js-roi-dollar-sign">$</div>
+            <input
+              class="RoiLeft__input RoiLeft__input--padding bhrForm__input js-bhrForm-input js-bhrForm-required js-avg-employee-sal js-blur-dollar-sign"
+              id="avgEmployeeSalary"
+              required=""
+              type="number"
+              aria-label="Average Employee Salary and Benefits"
+            />
+            <label
+              class="bhrForm__label RoiLeft__placeholder js-bhrForm-label"
+              for="avgEmployeeSalary"
+              >Average Employee Salary and Benefits</label
+            >
+          </div>
+          <div class="bhrForm__inputWrapper">
+            <button
+              class="Button Button--form bhrcolor-color1-background bhrcolor-white bhrForm__submit RoiLeft__submit js-roi-submit js-modal-opener"
+              type="submit"
+              aria-label="Click to see results"
+              data-modal="style-guide-modal"
+              role="button"
+            >
+              Calculate
+            </button>
+          </div>
+        </form>
+      </div>
+      <p class="RoiLeft__paragraph">
+        Reducing turnover and building a culture of performance excellence isn’t
+        just to give employees a great experience—it also reduces recruiting,
+        training, and administration expenses. Companies can lose thousands of
+        dollars on inefficient people processes, and the impact on productivity
+        can stretch even further. Read on to see how HR software changes four
+        important areas for the better: onboarding, electronic signatures,
+        time-off management, and administrative tasks.
+      </p>
+    </div>
+    <div class="RoiResults bhrtyp-center">
+      <img
+        class="RoiResults__image"
+        src="/images/roi-calculator/pudgy-05-min.png"
+        alt="Piggy bank image"
+      />
+      <div class="bhrborder-radius RoiResults__container">
+        <div class="typ-title1 bhrcolor-gray12">Estimated Annual Savings:</div>
+        <div class="RoiResults__resultWrapper">
+          <div class="typ-hero-subhead bhrcolor-gray9 RoiResults__category">
+            Onboarding Savings:
+          </div>
+          <div class="typ-stats bhrcolor-color1 RoiResults__result">
+            <span class="RoiResults__dollarSign js-roi-dollar-sign">$</span
+            ><span class="js-onboarding-savings-result"></span>
+          </div>
+        </div>
+        <div class="RoiResults__resultWrapper">
+          <div class="typ-hero-subhead bhrcolor-gray9 RoiResults__category">
+            Electronic Signatures Savings:
+          </div>
+          <div class="typ-stats bhrcolor-color1 RoiResults__result">
+            <span class="RoiResults__dollarSign js-roi-dollar-sign">$</span
+            ><span class="js-esignature-savings-result"></span>
+          </div>
+        </div>
+        <div class="RoiResults__resultWrapper">
+          <div class="typ-hero-subhead bhrcolor-gray9 RoiResults__category">
+            Time Off Management Savings:
+          </div>
+          <div class="typ-stats bhrcolor-color1 RoiResults__result">
+            <span class="RoiResults__dollarSign js-roi-dollar-sign">$</span
+            ><span class="js-time-off-mngmnt-savings-result"></span>
+          </div>
+        </div>
+        <div class="RoiResults__resultWrappe RoiResults__resultWrapper--last">
+          <div class="typ-hero-subhead bhrcolor-gray9 RoiResults__category">
+            Administrative Task Savings:
+          </div>
+          <div class="typ-stats bhrcolor-color1 RoiResults__result">
+            <span class="RoiResults__dollarSign js-roi-dollar-sign">$</span
+            ><span class="js-admin-task-savings-result"></span>
+          </div>
+        </div>
+        <a
+          class="Button Button--stroke RoiResults__button js-demo-button"
+          href="/lp/demo/"
+          aria-label="Click to follow link"
+          role="button"
+          >Free Customized Demo</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

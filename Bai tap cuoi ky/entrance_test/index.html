@@ -1,0 +1,47 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <body>
+      <h1>The Privacy-friendly URL shorten</h1>
+      <h2>Link shortener</h2>
+      <input type="text" id="urlInput" placeholder="Enter a link" />
+      <button onclick="shortenLink()">-></button>
+      <p id="shortenedLink"></p>
+
+      <script>
+        function shortenLink() {
+          const urlInput = document.getElementById("urlInput");
+          const url = urlInput.value;
+
+          fetch(
+            `https://api.shrtco.de/v2/shorten?url=${encodeURIComponent(url)}`
+          )
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.ok) {
+                const shortenedLink = data.result.full_short_link;
+                document.getElementById(
+                  "shortenedLink"
+                ).innerHTML = `Shorted link <a href="${shortenedLink}" target="_blank">${shortenedLink}</a>`;
+              } else {
+                document.getElementById("shortenedLink").innerHTML =
+                  "Link lởm, tôi chịu k rút gọn được";
+              }
+            })
+            .catch((error) => {
+              console.error("Ối dồi ôi:", error);
+              document.getElementById("shortenedLink").innerHTML =
+                "Hôm nay hơi hốm, k rút gọn được link này";
+            });
+        }
+      </script>
+    </body>
+  </body>
+</html>
